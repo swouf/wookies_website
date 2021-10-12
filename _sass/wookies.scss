@@ -1,0 +1,40 @@
+@import "poole";
+@import "hyde";
+@import "syntax";
+
+/* Wookies color */
+
+$primary-color: #c4182d;
+
+.theme-base-wookies .sidebar {
+  background-color: $primary-color;
+}
+.theme-base-wookies .content a,
+.theme-base-wookies .related-posts li a:hover {
+  color: $primary-color;
+}
+
+.sidebar-about h1 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media(max-width: 48em) {
+  #logo {
+    width: 30%;
+  }
+}
+// Overwrite some of the sidebar properties.
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    top: 1rem;
+    bottom: auto;
+    left:   1rem;
+  }
+}

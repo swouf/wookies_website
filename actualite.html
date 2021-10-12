@@ -1,0 +1,31 @@
+---
+layout: page
+title: Actualités
+---
+
+<p>
+Du volley, et plus si affinités...
+</p>
+<p>
+Nos deux équipes (Wookies et Lutry-Détente) participent au championnat de volley détente du SVRV (SwissVolley région Vaud).
+</p>
+<p>
+<p>
+Nos autres activités sont:
+<ul>
+    <li>Les entraînements</li>
+    <li>Les matchs</li>
+    <li>Divers tournois</li>
+    <li style="text-decoration: line-through;">Une sortie annuelle</li>
+    <li>Et l'assemblée générale bien sûr...</li>
+</ul>
+
+<h2>Articles</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

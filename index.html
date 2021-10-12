@@ -1,37 +1,11 @@
 ---
 layout: default
-title: Home
+title: Accueil
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<h2>Le club de volley détente les Wookies vous souhaite la bienvenue !</h2>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<p>
+  Si vous aimez le volleyball et privilégiez la convivialité et la bonne humeur plutôt que la compétition et la performance, vous avez choisi le bon club. Venez nous rejoindre pour vous amuser tout en faisant un sport d'équipe dans une ambiance agréable et décontractée. Notre club participe au championnat championnat de volley détente du SVRV (SwissVolley région Vaud).
+</p>
