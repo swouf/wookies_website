@@ -32,13 +32,17 @@ github:
 twitter_username: ""
 github_username:  ""
 
+sass:
+    sass_dir: _sass
+    style: compressed
+
 author:
   name:           'Jérémy La Scala'
   url:
 
 # Build settings
 paginate:         5
-version:          0.0.1
+version:          0.0.2
 
 #theme: hyde
 plugins:
